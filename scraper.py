@@ -59,6 +59,8 @@ def parse_laboratories_csv(soup, country):
 
     rows = []
 
+    start = True
+
     for tr in table.find_all('tr'):
 
         row = []
@@ -66,6 +68,10 @@ def parse_laboratories_csv(soup, country):
         for td in tr.find_all('td'):
 
             cell_text = td.get_text(strip=True)
+            if start == True:
+                start = False
+                continue
+
             row.append(cell_text)
 
         rows.append(row)
