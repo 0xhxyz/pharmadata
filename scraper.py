@@ -2,6 +2,13 @@ import csv
 import json
 import requests
 from bs4 import BeautifulSoup
+import os
+
+if not os.path.exists('csv'):
+    os.makedirs('csv')
+
+if not os.path.exists('json'):
+    os.makedirs('json')
 
 url = 'http://www.dpm.tn/dpm_pharm/medicament/listpays.php'
 
