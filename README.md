@@ -1,5 +1,13 @@
 # Scraping Pharmaceuticals Data
 
+Used:
+python, BeautifulSoup for scraping
+curl and web inspector for testing HTTP requests
+docker image of postgres for database
+
+i didn't connect the scraper with the database, i used the produced csv files to generate tables.
+TODO: clean the data and do that 
+
 Dependencies: 
 on linux:
 ```
