@@ -2,7 +2,7 @@
 
 ### Used:
 
-- python, BeautifulSoup for scraping
+- python, BeautifulSoup for scraping data into text, csv and json files
 
 - curl and web inspector for testing HTTP requests
 
